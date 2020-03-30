@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:effervescence-water/effervescence-water.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:effervescence-carbon/effervescence-carbon.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:SharedSource"
+      name = "SharedSource">
+      <FileRef
+         location = "group:EFF_TestUtils.h">
+      </FileRef>
+      <FileRef
+         location = "group:EFF_Types.h">
+      </FileRef>
+      <FileRef
+         location = "group:EFF_Utils.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:EFF_Utils.h">
+      </FileRef>
+      <FileRef
+         location = "group:set-version.sh">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:PublicUtility"
+      name = "PublicUtility">
+      <FileRef
+         location = "group:CAHALAudioDevice.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAHALAudioDevice.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAHALAudioObject.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAHALAudioObject.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAHALAudioStream.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAHALAudioStream.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAHALAudioSystemObject.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAHALAudioSystemObject.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAAtomic.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAAtomicStack.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAAutoDisposer.h">
+      </FileRef>
+      <FileRef
+         location = "group:CABitOperations.h">
+      </FileRef>
+      <FileRef
+         location = "group:CACFArray.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CACFArray.h">
+      </FileRef>
+      <FileRef
+         location = "group:CACFDictionary.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CACFDictionary.h">
+      </FileRef>
+      <FileRef
+         location = "group:CACFNumber.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CACFNumber.h">
+      </FileRef>
+      <FileRef
+         location = "group:CACFString.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CACFString.h">
+      </FileRef>
+      <FileRef
+         location = "group:CADebugger.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CADebugger.h">
+      </FileRef>
+      <FileRef
+         location = "group:CADebugMacros.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CADebugMacros.h">
+      </FileRef>
+      <FileRef
+         location = "group:CADebugPrintf.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CADebugPrintf.h">
+      </FileRef>
+      <FileRef
+         location = "group:CADispatchQueue.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CADispatchQueue.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAException.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAHostTimeBase.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAHostTimeBase.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAMutex.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAMutex.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAPropertyAddress.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAPThread.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAPThread.h">
+      </FileRef>
+      <FileRef
+         location = "group:CARingBuffer.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CARingBuffer.h">
+      </FileRef>
+      <FileRef
+         location = "group:CAVolumeCurve.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CAVolumeCurve.h">
+      </FileRef>
+   </Group>
+</Workspace>
