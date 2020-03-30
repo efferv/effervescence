@@ -1,0 +1,6 @@
+[submodule "effervescence-carbon"]
+	path = effervescence-carbon
+	url = git@github.com:efferv/effervescence-carbon.git
+[submodule "effervescence-water"]
+	path = effervescence-water
+	url = git@github.com:efferv/effervescence-water.git
