@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FB5C3E82430B63C00189EFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C3E72430B63C00189EFB /* ContentView.swift */; };
+		3FB5C3EA2430B63D00189EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C3E92430B63D00189EFB /* Assets.xcassets */; };
+		3FB5C3F02430B63D00189EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C3EE2430B63D00189EFB /* Main.storyboard */; };
+		3FB5C3FA2430B78F00189EFB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C3F92430B78F00189EFB /* AudioToolbox.framework */; };
+		3FB5C3FC2430B79700189EFB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C3FB2430B79700189EFB /* AVFoundation.framework */; };
+		3FB5C3FE2430B7A000189EFB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C3FD2430B7A000189EFB /* CoreAudio.framework */; };
+		3FB5C4002430B7A800189EFB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C3FF2430B7A800189EFB /* ScriptingBridge.framework */; };
+		3FB5C4022430B7B100189EFB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C4012430B7B100189EFB /* Security.framework */; };
+		3FB5C47824313A6700189EFB /* libPublicUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C47724313A6700189EFB /* libPublicUtility.a */; };
+		3FB5C50D24313E5400189EFB /* EFF_Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C50824313E5400189EFB /* EFF_Utils.cpp */; };
+		3FB5C50E24313E5400189EFB /* set-version.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C50C24313E5400189EFB /* set-version.sh */; };
+		3FB5C52F24313E6100189EFB /* CAVolumeCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51324313E6000189EFB /* CAVolumeCurve.cpp */; };
+		3FB5C53024313E6100189EFB /* CADispatchQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51924313E6100189EFB /* CADispatchQueue.cpp */; };
+		3FB5C53124313E6100189EFB /* CACFNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51A24313E6100189EFB /* CACFNumber.cpp */; };
+		3FB5C53224313E6100189EFB /* CACFDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51B24313E6100189EFB /* CACFDictionary.cpp */; };
+		3FB5C53324313E6100189EFB /* CADebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51D24313E6100189EFB /* CADebugger.cpp */; };
+		3FB5C53424313E6100189EFB /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51E24313E6100189EFB /* CADebugMacros.cpp */; };
+		3FB5C53524313E6100189EFB /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52024313E6100189EFB /* CADebugPrintf.cpp */; };
+		3FB5C53624313E6100189EFB /* CARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52124313E6100189EFB /* CARingBuffer.cpp */; };
+		3FB5C53724313E6100189EFB /* CAPThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52324313E6100189EFB /* CAPThread.cpp */; };
+		3FB5C53824313E6100189EFB /* CACFString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52524313E6100189EFB /* CACFString.cpp */; };
+		3FB5C53924313E6100189EFB /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52624313E6100189EFB /* CAHostTimeBase.cpp */; };
+		3FB5C53A24313E6100189EFB /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52D24313E6100189EFB /* CAMutex.cpp */; };
+		3FB5C53B24313E6100189EFB /* CACFArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52E24313E6100189EFB /* CACFArray.cpp */; };
+		3FB5C57D243142F900189EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C57C243142F900189EFB /* AppDelegate.swift */; };
+		3FB5C5802431CB5F00189EFB /* EFF_AudioDeviceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C57F2431CB5F00189EFB /* EFF_AudioDeviceManager.mm */; };
+		3FB5C5832431CBF100189EFB /* EFF_AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C5812431CBF100189EFB /* EFF_AudioDevice.cpp */; };
+		3FB5C59E2431F0F300189EFB /* EFF_SoundDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C59D2431F0F300189EFB /* EFF_SoundDevice.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FB5C3E22430B63C00189EFB /* effervescence-water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "effervescence-water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB5C3E72430B63C00189EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FB5C3E92430B63D00189EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FB5C3EF2430B63D00189EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FB5C3F12430B63D00189EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB5C3F22430B63D00189EFB /* effervescence_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = effervescence_app.entitlements; sourceTree = "<group>"; };
+		3FB5C3F92430B78F00189EFB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3FB5C3FB2430B79700189EFB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3FB5C3FD2430B7A000189EFB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3FB5C3FF2430B7A800189EFB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		3FB5C4012430B7B100189EFB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3FB5C47724313A6700189EFB /* libPublicUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPublicUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB5C50824313E5400189EFB /* EFF_Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EFF_Utils.cpp; path = ../SharedSource/EFF_Utils.cpp; sourceTree = "<group>"; };
+		3FB5C50924313E5400189EFB /* EFF_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFF_Utils.h; path = ../SharedSource/EFF_Utils.h; sourceTree = "<group>"; };
+		3FB5C50A24313E5400189EFB /* EFF_TestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFF_TestUtils.h; path = ../SharedSource/EFF_TestUtils.h; sourceTree = "<group>"; };
+		3FB5C50B24313E5400189EFB /* EFF_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFF_Types.h; path = ../SharedSource/EFF_Types.h; sourceTree = "<group>"; };
+		3FB5C50C24313E5400189EFB /* set-version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "set-version.sh"; path = "../SharedSource/set-version.sh"; sourceTree = "<group>"; };
+		3FB5C50F24313E6000189EFB /* CAMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAMutex.h; path = ../PublicUtility/CAMutex.h; sourceTree = "<group>"; };
+		3FB5C51024313E6000189EFB /* CAAutoDisposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAAutoDisposer.h; path = ../PublicUtility/CAAutoDisposer.h; sourceTree = "<group>"; };
+		3FB5C51124313E6000189EFB /* CACFNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CACFNumber.h; path = ../PublicUtility/CACFNumber.h; sourceTree = "<group>"; };
+		3FB5C51224313E6000189EFB /* CACFArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CACFArray.h; path = ../PublicUtility/CACFArray.h; sourceTree = "<group>"; };
+		3FB5C51324313E6000189EFB /* CAVolumeCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAVolumeCurve.cpp; path = ../PublicUtility/CAVolumeCurve.cpp; sourceTree = "<group>"; };
+		3FB5C51424313E6000189EFB /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CABitOperations.h; path = ../PublicUtility/CABitOperations.h; sourceTree = "<group>"; };
+		3FB5C51524313E6000189EFB /* CAPropertyAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAPropertyAddress.h; path = ../PublicUtility/CAPropertyAddress.h; sourceTree = "<group>"; };
+		3FB5C51624313E6000189EFB /* CADispatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CADispatchQueue.h; path = ../PublicUtility/CADispatchQueue.h; sourceTree = "<group>"; };
+		3FB5C51724313E6100189EFB /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CADebugPrintf.h; path = ../PublicUtility/CADebugPrintf.h; sourceTree = "<group>"; };
+		3FB5C51824313E6100189EFB /* CAAtomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAAtomic.h; path = ../PublicUtility/CAAtomic.h; sourceTree = "<group>"; };
+		3FB5C51924313E6100189EFB /* CADispatchQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CADispatchQueue.cpp; path = ../PublicUtility/CADispatchQueue.cpp; sourceTree = "<group>"; };
+		3FB5C51A24313E6100189EFB /* CACFNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CACFNumber.cpp; path = ../PublicUtility/CACFNumber.cpp; sourceTree = "<group>"; };
+		3FB5C51B24313E6100189EFB /* CACFDictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CACFDictionary.cpp; path = ../PublicUtility/CACFDictionary.cpp; sourceTree = "<group>"; };
+		3FB5C51C24313E6100189EFB /* CAAtomicStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAAtomicStack.h; path = ../PublicUtility/CAAtomicStack.h; sourceTree = "<group>"; };
+		3FB5C51D24313E6100189EFB /* CADebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CADebugger.cpp; path = ../PublicUtility/CADebugger.cpp; sourceTree = "<group>"; };
+		3FB5C51E24313E6100189EFB /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CADebugMacros.cpp; path = ../PublicUtility/CADebugMacros.cpp; sourceTree = "<group>"; };
+		3FB5C51F24313E6100189EFB /* CADebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CADebugger.h; path = ../PublicUtility/CADebugger.h; sourceTree = "<group>"; };
+		3FB5C52024313E6100189EFB /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CADebugPrintf.cpp; path = ../PublicUtility/CADebugPrintf.cpp; sourceTree = "<group>"; };
+		3FB5C52124313E6100189EFB /* CARingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CARingBuffer.cpp; path = ../PublicUtility/CARingBuffer.cpp; sourceTree = "<group>"; };
+		3FB5C52224313E6100189EFB /* CACFDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CACFDictionary.h; path = ../PublicUtility/CACFDictionary.h; sourceTree = "<group>"; };
+		3FB5C52324313E6100189EFB /* CAPThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAPThread.cpp; path = ../PublicUtility/CAPThread.cpp; sourceTree = "<group>"; };
+		3FB5C52424313E6100189EFB /* CAVolumeCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAVolumeCurve.h; path = ../PublicUtility/CAVolumeCurve.h; sourceTree = "<group>"; };
+		3FB5C52524313E6100189EFB /* CACFString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CACFString.cpp; path = ../PublicUtility/CACFString.cpp; sourceTree = "<group>"; };
+		3FB5C52624313E6100189EFB /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAHostTimeBase.cpp; path = ../PublicUtility/CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		3FB5C52724313E6100189EFB /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAHostTimeBase.h; path = ../PublicUtility/CAHostTimeBase.h; sourceTree = "<group>"; };
+		3FB5C52824313E6100189EFB /* CACFString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CACFString.h; path = ../PublicUtility/CACFString.h; sourceTree = "<group>"; };
+		3FB5C52924313E6100189EFB /* CARingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CARingBuffer.h; path = ../PublicUtility/CARingBuffer.h; sourceTree = "<group>"; };
+		3FB5C52A24313E6100189EFB /* CAException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAException.h; path = ../PublicUtility/CAException.h; sourceTree = "<group>"; };
+		3FB5C52B24313E6100189EFB /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CADebugMacros.h; path = ../PublicUtility/CADebugMacros.h; sourceTree = "<group>"; };
+		3FB5C52C24313E6100189EFB /* CAPThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAPThread.h; path = ../PublicUtility/CAPThread.h; sourceTree = "<group>"; };
+		3FB5C52D24313E6100189EFB /* CAMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAMutex.cpp; path = ../PublicUtility/CAMutex.cpp; sourceTree = "<group>"; };
+		3FB5C52E24313E6100189EFB /* CACFArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CACFArray.cpp; path = ../PublicUtility/CACFArray.cpp; sourceTree = "<group>"; };
+		3FB5C57C243142F900189EFB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FB5C57E2431CB5E00189EFB /* EFF_AudioDeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFF_AudioDeviceManager.h; sourceTree = "<group>"; };
+		3FB5C57F2431CB5F00189EFB /* EFF_AudioDeviceManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EFF_AudioDeviceManager.mm; sourceTree = "<group>"; };
+		3FB5C5812431CBF100189EFB /* EFF_AudioDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EFF_AudioDevice.cpp; sourceTree = "<group>"; };
+		3FB5C5822431CBF100189EFB /* EFF_AudioDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFF_AudioDevice.h; sourceTree = "<group>"; };
+		3FB5C5942431CF5500189EFB /* CAHALAudioStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAHALAudioStream.h; path = ../PublicUtility/CAHALAudioStream.h; sourceTree = "<group>"; };
+		3FB5C5952431CF5500189EFB /* CAHALAudioSystemObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAHALAudioSystemObject.cpp; path = ../PublicUtility/CAHALAudioSystemObject.cpp; sourceTree = "<group>"; };
+		3FB5C5962431CF5500189EFB /* CAHALAudioStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAHALAudioStream.cpp; path = ../PublicUtility/CAHALAudioStream.cpp; sourceTree = "<group>"; };
+		3FB5C5972431CF5500189EFB /* CAHALAudioSystemObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAHALAudioSystemObject.h; path = ../PublicUtility/CAHALAudioSystemObject.h; sourceTree = "<group>"; };
+		3FB5C5982431CF5500189EFB /* CAHALAudioDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAHALAudioDevice.h; path = ../PublicUtility/CAHALAudioDevice.h; sourceTree = "<group>"; };
+		3FB5C5992431CF5500189EFB /* CAHALAudioDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAHALAudioDevice.cpp; path = ../PublicUtility/CAHALAudioDevice.cpp; sourceTree = "<group>"; };
+		3FB5C59A2431CF5500189EFB /* CAHALAudioObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAHALAudioObject.h; path = ../PublicUtility/CAHALAudioObject.h; sourceTree = "<group>"; };
+		3FB5C59B2431CF5500189EFB /* CAHALAudioObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAHALAudioObject.cpp; path = ../PublicUtility/CAHALAudioObject.cpp; sourceTree = "<group>"; };
+		3FB5C59C2431EFE100189EFB /* EFF_SoundDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFF_SoundDevice.h; sourceTree = "<group>"; };
+		3FB5C59D2431F0F300189EFB /* EFF_SoundDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EFF_SoundDevice.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FB5C3DF2430B63C00189EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB5C3FE2430B7A000189EFB /* CoreAudio.framework in Frameworks */,
+				3FB5C4022430B7B100189EFB /* Security.framework in Frameworks */,
+				3FB5C4002430B7A800189EFB /* ScriptingBridge.framework in Frameworks */,
+				3FB5C3FC2430B79700189EFB /* AVFoundation.framework in Frameworks */,
+				3FB5C3FA2430B78F00189EFB /* AudioToolbox.framework in Frameworks */,
+				3FB5C47824313A6700189EFB /* libPublicUtility.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FB5C3D92430B63C00189EFB = {
+			isa = PBXGroup;
+			children = (
+				3FB5C57B243142F900189EFB /* WaterSource */,
+				3FB5C3E42430B63C00189EFB /* WaterSupport */,
+				3FB5C3F82430B78F00189EFB /* Frameworks */,
+				3FB5C3E32430B63C00189EFB /* Products */,
+				3FB5C50624313E3800189EFB /* PublicUtility */,
+				3FB5C50724313E4700189EFB /* SharedSource */,
+			);
+			sourceTree = "<group>";
+		};
+		3FB5C3E32430B63C00189EFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FB5C3E22430B63C00189EFB /* effervescence-water.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FB5C3E42430B63C00189EFB /* WaterSupport */ = {
+			isa = PBXGroup;
+			children = (
+				3FB5C3E92430B63D00189EFB /* Assets.xcassets */,
+				3FB5C3E72430B63C00189EFB /* ContentView.swift */,
+				3FB5C3F22430B63D00189EFB /* effervescence_app.entitlements */,
+				3FB5C3F12430B63D00189EFB /* Info.plist */,
+				3FB5C3EE2430B63D00189EFB /* Main.storyboard */,
+				3FB5C3EB2430B63D00189EFB /* Preview Content */,
+			);
+			path = WaterSupport;
+			sourceTree = "<group>";
+		};
+		3FB5C3EB2430B63D00189EFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FB5C3F82430B78F00189EFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB5C3F92430B78F00189EFB /* AudioToolbox.framework */,
+				3FB5C3FB2430B79700189EFB /* AVFoundation.framework */,
+				3FB5C3FD2430B7A000189EFB /* CoreAudio.framework */,
+				3FB5C47724313A6700189EFB /* libPublicUtility.a */,
+				3FB5C3FF2430B7A800189EFB /* ScriptingBridge.framework */,
+				3FB5C4012430B7B100189EFB /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FB5C50624313E3800189EFB /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				3FB5C5992431CF5500189EFB /* CAHALAudioDevice.cpp */,
+				3FB5C5982431CF5500189EFB /* CAHALAudioDevice.h */,
+				3FB5C59B2431CF5500189EFB /* CAHALAudioObject.cpp */,
+				3FB5C59A2431CF5500189EFB /* CAHALAudioObject.h */,
+				3FB5C5962431CF5500189EFB /* CAHALAudioStream.cpp */,
+				3FB5C5942431CF5500189EFB /* CAHALAudioStream.h */,
+				3FB5C5952431CF5500189EFB /* CAHALAudioSystemObject.cpp */,
+				3FB5C5972431CF5500189EFB /* CAHALAudioSystemObject.h */,
+				3FB5C51824313E6100189EFB /* CAAtomic.h */,
+				3FB5C51C24313E6100189EFB /* CAAtomicStack.h */,
+				3FB5C51024313E6000189EFB /* CAAutoDisposer.h */,
+				3FB5C51424313E6000189EFB /* CABitOperations.h */,
+				3FB5C52E24313E6100189EFB /* CACFArray.cpp */,
+				3FB5C51224313E6000189EFB /* CACFArray.h */,
+				3FB5C51B24313E6100189EFB /* CACFDictionary.cpp */,
+				3FB5C52224313E6100189EFB /* CACFDictionary.h */,
+				3FB5C51A24313E6100189EFB /* CACFNumber.cpp */,
+				3FB5C51124313E6000189EFB /* CACFNumber.h */,
+				3FB5C52524313E6100189EFB /* CACFString.cpp */,
+				3FB5C52824313E6100189EFB /* CACFString.h */,
+				3FB5C51D24313E6100189EFB /* CADebugger.cpp */,
+				3FB5C51F24313E6100189EFB /* CADebugger.h */,
+				3FB5C51E24313E6100189EFB /* CADebugMacros.cpp */,
+				3FB5C52B24313E6100189EFB /* CADebugMacros.h */,
+				3FB5C52024313E6100189EFB /* CADebugPrintf.cpp */,
+				3FB5C51724313E6100189EFB /* CADebugPrintf.h */,
+				3FB5C51924313E6100189EFB /* CADispatchQueue.cpp */,
+				3FB5C51624313E6000189EFB /* CADispatchQueue.h */,
+				3FB5C52A24313E6100189EFB /* CAException.h */,
+				3FB5C52624313E6100189EFB /* CAHostTimeBase.cpp */,
+				3FB5C52724313E6100189EFB /* CAHostTimeBase.h */,
+				3FB5C52D24313E6100189EFB /* CAMutex.cpp */,
+				3FB5C50F24313E6000189EFB /* CAMutex.h */,
+				3FB5C51524313E6000189EFB /* CAPropertyAddress.h */,
+				3FB5C52324313E6100189EFB /* CAPThread.cpp */,
+				3FB5C52C24313E6100189EFB /* CAPThread.h */,
+				3FB5C52124313E6100189EFB /* CARingBuffer.cpp */,
+				3FB5C52924313E6100189EFB /* CARingBuffer.h */,
+				3FB5C51324313E6000189EFB /* CAVolumeCurve.cpp */,
+				3FB5C52424313E6100189EFB /* CAVolumeCurve.h */,
+			);
+			name = PublicUtility;
+			sourceTree = "<group>";
+		};
+		3FB5C50724313E4700189EFB /* SharedSource */ = {
+			isa = PBXGroup;
+			children = (
+				3FB5C50A24313E5400189EFB /* EFF_TestUtils.h */,
+				3FB5C50B24313E5400189EFB /* EFF_Types.h */,
+				3FB5C50824313E5400189EFB /* EFF_Utils.cpp */,
+				3FB5C50924313E5400189EFB /* EFF_Utils.h */,
+				3FB5C50C24313E5400189EFB /* set-version.sh */,
+			);
+			name = SharedSource;
+			sourceTree = "<group>";
+		};
+		3FB5C57B243142F900189EFB /* WaterSource */ = {
+			isa = PBXGroup;
+			children = (
+				3FB5C57C243142F900189EFB /* AppDelegate.swift */,
+				3FB5C57E2431CB5E00189EFB /* EFF_AudioDeviceManager.h */,
+				3FB5C57F2431CB5F00189EFB /* EFF_AudioDeviceManager.mm */,
+				3FB5C5812431CBF100189EFB /* EFF_AudioDevice.cpp */,
+				3FB5C5822431CBF100189EFB /* EFF_AudioDevice.h */,
+				3FB5C59C2431EFE100189EFB /* EFF_SoundDevice.h */,
+				3FB5C59D2431F0F300189EFB /* EFF_SoundDevice.cpp */,
+			);
+			path = WaterSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FB5C3E12430B63C00189EFB /* effervescence-water */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB5C3F52430B63D00189EFB /* Build configuration list for PBXNativeTarget "effervescence-water" */;
+			buildPhases = (
+				3FB5C3DE2430B63C00189EFB /* Sources */,
+				3FB5C3DF2430B63C00189EFB /* Frameworks */,
+				3FB5C3E02430B63C00189EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "effervescence-water";
+			productName = "effervescence-app";
+			productReference = 3FB5C3E22430B63C00189EFB /* effervescence-water.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FB5C3DA2430B63C00189EFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = nerrons;
+				TargetAttributes = {
+					3FB5C3E12430B63C00189EFB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3FB5C3DD2430B63C00189EFB /* Build configuration list for PBXProject "effervescence-water" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FB5C3D92430B63C00189EFB;
+			productRefGroup = 3FB5C3E32430B63C00189EFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FB5C3E12430B63C00189EFB /* effervescence-water */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FB5C3E02430B63C00189EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB5C3F02430B63D00189EFB /* Main.storyboard in Resources */,
+				3FB5C3EA2430B63D00189EFB /* Assets.xcassets in Resources */,
+				3FB5C50E24313E5400189EFB /* set-version.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FB5C3DE2430B63C00189EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB5C53324313E6100189EFB /* CADebugger.cpp in Sources */,
+				3FB5C53224313E6100189EFB /* CACFDictionary.cpp in Sources */,
+				3FB5C53024313E6100189EFB /* CADispatchQueue.cpp in Sources */,
+				3FB5C3E82430B63C00189EFB /* ContentView.swift in Sources */,
+				3FB5C50D24313E5400189EFB /* EFF_Utils.cpp in Sources */,
+				3FB5C53624313E6100189EFB /* CARingBuffer.cpp in Sources */,
+				3FB5C53A24313E6100189EFB /* CAMutex.cpp in Sources */,
+				3FB5C53824313E6100189EFB /* CACFString.cpp in Sources */,
+				3FB5C57D243142F900189EFB /* AppDelegate.swift in Sources */,
+				3FB5C59E2431F0F300189EFB /* EFF_SoundDevice.cpp in Sources */,
+				3FB5C53924313E6100189EFB /* CAHostTimeBase.cpp in Sources */,
+				3FB5C53724313E6100189EFB /* CAPThread.cpp in Sources */,
+				3FB5C53B24313E6100189EFB /* CACFArray.cpp in Sources */,
+				3FB5C53524313E6100189EFB /* CADebugPrintf.cpp in Sources */,
+				3FB5C52F24313E6100189EFB /* CAVolumeCurve.cpp in Sources */,
+				3FB5C5832431CBF100189EFB /* EFF_AudioDevice.cpp in Sources */,
+				3FB5C53424313E6100189EFB /* CADebugMacros.cpp in Sources */,
+				3FB5C53124313E6100189EFB /* CACFNumber.cpp in Sources */,
+				3FB5C5802431CB5F00189EFB /* EFF_AudioDeviceManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FB5C3EE2430B63D00189EFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB5C3EF2430B63D00189EFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FB5C3F32430B63D00189EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FB5C3F42430B63D00189EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3FB5C3F62430B63D00189EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaterSupport/effervescence_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "AppSupport/Preview\\ Content";
+				DEVELOPMENT_TEAM = 7RC9R8AS63;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterSupport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerrons.effervescence-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FB5C3F72430B63D00189EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaterSupport/effervescence_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "AppSupport/Preview\\ Content";
+				DEVELOPMENT_TEAM = 7RC9R8AS63;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterSupport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerrons.effervescence-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FB5C3DD2430B63C00189EFB /* Build configuration list for PBXProject "effervescence-water" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB5C3F32430B63D00189EFB /* Debug */,
+				3FB5C3F42430B63D00189EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB5C3F52430B63D00189EFB /* Build configuration list for PBXNativeTarget "effervescence-water" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB5C3F62430B63D00189EFB /* Debug */,
+				3FB5C3F72430B63D00189EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FB5C3DA2430B63C00189EFB /* Project object */;
+}
