@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA000002433AF9D002DAA38 /* libPublicUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C47724313A6700189EFB /* libPublicUtility.a */; };
+		3FA000202433B225002DAA38 /* libSharedSource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0001F2433B225002DAA38 /* libSharedSource.a */; };
 		3FB5C3E82430B63C00189EFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C3E72430B63C00189EFB /* ContentView.swift */; };
 		3FB5C3EA2430B63D00189EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C3E92430B63D00189EFB /* Assets.xcassets */; };
 		3FB5C3F02430B63D00189EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C3EE2430B63D00189EFB /* Main.storyboard */; };
@@ -15,22 +17,7 @@
 		3FB5C3FE2430B7A000189EFB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C3FD2430B7A000189EFB /* CoreAudio.framework */; };
 		3FB5C4002430B7A800189EFB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C3FF2430B7A800189EFB /* ScriptingBridge.framework */; };
 		3FB5C4022430B7B100189EFB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C4012430B7B100189EFB /* Security.framework */; };
-		3FB5C47824313A6700189EFB /* libPublicUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C47724313A6700189EFB /* libPublicUtility.a */; };
-		3FB5C50D24313E5400189EFB /* EFF_Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C50824313E5400189EFB /* EFF_Utils.cpp */; };
 		3FB5C50E24313E5400189EFB /* set-version.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C50C24313E5400189EFB /* set-version.sh */; };
-		3FB5C52F24313E6100189EFB /* CAVolumeCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51324313E6000189EFB /* CAVolumeCurve.cpp */; };
-		3FB5C53024313E6100189EFB /* CADispatchQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51924313E6100189EFB /* CADispatchQueue.cpp */; };
-		3FB5C53124313E6100189EFB /* CACFNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51A24313E6100189EFB /* CACFNumber.cpp */; };
-		3FB5C53224313E6100189EFB /* CACFDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51B24313E6100189EFB /* CACFDictionary.cpp */; };
-		3FB5C53324313E6100189EFB /* CADebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51D24313E6100189EFB /* CADebugger.cpp */; };
-		3FB5C53424313E6100189EFB /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C51E24313E6100189EFB /* CADebugMacros.cpp */; };
-		3FB5C53524313E6100189EFB /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52024313E6100189EFB /* CADebugPrintf.cpp */; };
-		3FB5C53624313E6100189EFB /* CARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52124313E6100189EFB /* CARingBuffer.cpp */; };
-		3FB5C53724313E6100189EFB /* CAPThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52324313E6100189EFB /* CAPThread.cpp */; };
-		3FB5C53824313E6100189EFB /* CACFString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52524313E6100189EFB /* CACFString.cpp */; };
-		3FB5C53924313E6100189EFB /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52624313E6100189EFB /* CAHostTimeBase.cpp */; };
-		3FB5C53A24313E6100189EFB /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52D24313E6100189EFB /* CAMutex.cpp */; };
-		3FB5C53B24313E6100189EFB /* CACFArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C52E24313E6100189EFB /* CACFArray.cpp */; };
 		3FB5C57D243142F900189EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C57C243142F900189EFB /* AppDelegate.swift */; };
 		3FB5C5802431CB5F00189EFB /* EFF_AudioDeviceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C57F2431CB5F00189EFB /* EFF_AudioDeviceManager.mm */; };
 		3FB5C5832431CBF100189EFB /* EFF_AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C5812431CBF100189EFB /* EFF_AudioDevice.cpp */; };
@@ -38,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FA0001F2433B225002DAA38 /* libSharedSource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSharedSource.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB5C3E22430B63C00189EFB /* effervescence-water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "effervescence-water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB5C3E72430B63C00189EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FB5C3E92430B63D00189EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,12 +97,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA000002433AF9D002DAA38 /* libPublicUtility.a in Frameworks */,
+				3FA000202433B225002DAA38 /* libSharedSource.a in Frameworks */,
 				3FB5C3FE2430B7A000189EFB /* CoreAudio.framework in Frameworks */,
 				3FB5C4022430B7B100189EFB /* Security.framework in Frameworks */,
 				3FB5C4002430B7A800189EFB /* ScriptingBridge.framework in Frameworks */,
 				3FB5C3FC2430B79700189EFB /* AVFoundation.framework in Frameworks */,
 				3FB5C3FA2430B78F00189EFB /* AudioToolbox.framework in Frameworks */,
-				3FB5C47824313A6700189EFB /* libPublicUtility.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +153,7 @@
 		3FB5C3F82430B78F00189EFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FA0001F2433B225002DAA38 /* libSharedSource.a */,
 				3FB5C3F92430B78F00189EFB /* AudioToolbox.framework */,
 				3FB5C3FB2430B79700189EFB /* AVFoundation.framework */,
 				3FB5C3FD2430B7A000189EFB /* CoreAudio.framework */,
@@ -318,24 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FB5C53324313E6100189EFB /* CADebugger.cpp in Sources */,
-				3FB5C53224313E6100189EFB /* CACFDictionary.cpp in Sources */,
-				3FB5C53024313E6100189EFB /* CADispatchQueue.cpp in Sources */,
 				3FB5C3E82430B63C00189EFB /* ContentView.swift in Sources */,
-				3FB5C50D24313E5400189EFB /* EFF_Utils.cpp in Sources */,
-				3FB5C53624313E6100189EFB /* CARingBuffer.cpp in Sources */,
-				3FB5C53A24313E6100189EFB /* CAMutex.cpp in Sources */,
-				3FB5C53824313E6100189EFB /* CACFString.cpp in Sources */,
 				3FB5C57D243142F900189EFB /* AppDelegate.swift in Sources */,
 				3FB5C59E2431F0F300189EFB /* EFF_SoundDevice.cpp in Sources */,
-				3FB5C53924313E6100189EFB /* CAHostTimeBase.cpp in Sources */,
-				3FB5C53724313E6100189EFB /* CAPThread.cpp in Sources */,
-				3FB5C53B24313E6100189EFB /* CACFArray.cpp in Sources */,
-				3FB5C53524313E6100189EFB /* CADebugPrintf.cpp in Sources */,
-				3FB5C52F24313E6100189EFB /* CAVolumeCurve.cpp in Sources */,
 				3FB5C5832431CBF100189EFB /* EFF_AudioDevice.cpp in Sources */,
-				3FB5C53424313E6100189EFB /* CADebugMacros.cpp in Sources */,
-				3FB5C53124313E6100189EFB /* CACFNumber.cpp in Sources */,
 				3FB5C5802431CB5F00189EFB /* EFF_AudioDeviceManager.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,7 +450,7 @@
 				CODE_SIGN_ENTITLEMENTS = WaterSupport/effervescence_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "AppSupport/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "WaterSupport/Preview\\ Content";
 				DEVELOPMENT_TEAM = 7RC9R8AS63;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -497,7 +473,7 @@
 				CODE_SIGN_ENTITLEMENTS = WaterSupport/effervescence_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "AppSupport/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "WaterSupport/Preview\\ Content";
 				DEVELOPMENT_TEAM = 7RC9R8AS63;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

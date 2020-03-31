@@ -6,7 +6,7 @@
 //  Copyright © 2020 nerrons.
 //  Copyright © 2017, 2020 Kyle Neideck
 //
-//  An HAL audio device. Note that this class's only state is the AudioObjectID of the device.
+//  A general HAL audio device. Note that this class's only state is the AudioObjectID of the device.
 //
 
 #ifndef EFF_AudioDevice_h

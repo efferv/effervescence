@@ -15,9 +15,10 @@
 //  EFFApp by publishing an input stream. EFFApp then plays the audio on the user's real output
 //  device.
 //
-//  See EFFDriver/EFFDriver/EFF_Device.h.
+//  See CarbonSource/EFF_Device.h.
 //
-// This class is called SoundDevice because it appears in the Sound panel of the preferences.
+// EFFSoundDevice represents our devices published by effervescence-carbon.
+// This class is called SoundDevice because it appears in the Sound panel of System Preferences.
 
 #ifndef EFF_SoundDevice_h
 #define EFF_SoundDevice_h
