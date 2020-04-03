@@ -26,8 +26,9 @@
 
 /* Begin PBXFileReference section */
 		3FA0001F2433B225002DAA38 /* libSharedSource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSharedSource.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA000222436FDBB002DAA38 /* effervescence-water-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "effervescence-water-Bridging-Header.h"; sourceTree = "<group>"; };
 		3FB5C3E22430B63C00189EFB /* effervescence-water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "effervescence-water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FB5C3E72430B63C00189EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FB5C3E72430B63C00189EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../WaterSupport/ContentView.swift; sourceTree = "<group>"; };
 		3FB5C3E92430B63D00189EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB5C3EF2430B63D00189EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FB5C3F12430B63D00189EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				3FB5C3E92430B63D00189EFB /* Assets.xcassets */,
-				3FB5C3E72430B63C00189EFB /* ContentView.swift */,
 				3FB5C3F22430B63D00189EFB /* effervescence_app.entitlements */,
 				3FB5C3F12430B63D00189EFB /* Info.plist */,
 				3FB5C3EE2430B63D00189EFB /* Main.storyboard */,
@@ -226,6 +226,7 @@
 		3FB5C57B243142F900189EFB /* WaterSource */ = {
 			isa = PBXGroup;
 			children = (
+				3FB5C3E72430B63C00189EFB /* ContentView.swift */,
 				3FB5C57C243142F900189EFB /* AppDelegate.swift */,
 				3FB5C57E2431CB5E00189EFB /* EFF_AudioDeviceManager.h */,
 				3FB5C57F2431CB5F00189EFB /* EFF_AudioDeviceManager.mm */,
@@ -233,6 +234,7 @@
 				3FB5C5822431CBF100189EFB /* EFF_AudioDevice.h */,
 				3FB5C59C2431EFE100189EFB /* EFF_SoundDevice.h */,
 				3FB5C59D2431F0F300189EFB /* EFF_SoundDevice.cpp */,
+				3FA000222436FDBB002DAA38 /* effervescence-water-Bridging-Header.h */,
 			);
 			path = WaterSource;
 			sourceTree = "<group>";
@@ -450,6 +452,7 @@
 				CODE_SIGN_ENTITLEMENTS = WaterSupport/effervescence_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_ASSET_PATHS = "WaterSupport/Preview\\ Content";
 				DEVELOPMENT_TEAM = 7RC9R8AS63;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -462,6 +465,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerrons.effervescence-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WaterSource/effervescence-water-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -473,6 +477,7 @@
 				CODE_SIGN_ENTITLEMENTS = WaterSupport/effervescence_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_ASSET_PATHS = "WaterSupport/Preview\\ Content";
 				DEVELOPMENT_TEAM = 7RC9R8AS63;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -485,6 +490,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerrons.effervescence-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WaterSource/effervescence-water-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

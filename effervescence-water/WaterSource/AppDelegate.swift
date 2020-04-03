@@ -14,8 +14,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
 
+    var effAudioDeviceManager: EFFAudioDeviceManager!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        effAudioDeviceManager = EFFAudioDeviceManager()
+        
+        
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
 
