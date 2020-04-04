@@ -18,7 +18,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         audioDeviceManager = EFFAudioDeviceManager()
+        let audioSystem = EFF_HALAudioSystemObject()
+        let oldOutputDevice = audioSystem.getOSDefaultMainDevice()
         audioDeviceManager.setEFFSoundDeviceAsOSDefault()
+        audioDeviceManager.setOutputDeviceWithID(oldOutputDevice, revertOnFailure: false)
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
@@ -35,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        audioDeviceManager.unsetEFFSoundDeviceAsOSDefault()
     }
 }
 

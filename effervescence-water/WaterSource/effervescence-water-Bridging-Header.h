@@ -9,7 +9,8 @@
 #ifndef effervescence_water_Bridging_Header_h
 #define effervescence_water_Bridging_Header_h
 
-#include "EFF_AudioDeviceManager.h"
-#include "EFF_HALAudioSystemObject.h"
+#import "EFF_AudioDeviceManager.h"
+#import "EFF_OutputDeviceManager.h"
+#import "EFF_HALAudioSystemObject.h"
 
 #endif /* effervescence_water_Bridging_Header_h */

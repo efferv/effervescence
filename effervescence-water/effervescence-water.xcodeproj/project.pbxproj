@@ -243,11 +243,11 @@
 				3FB5C5822431CBF100189EFB /* EFF_AudioDevice.h */,
 				3FB5C59C2431EFE100189EFB /* EFF_SoundDevice.h */,
 				3FB5C59D2431F0F300189EFB /* EFF_SoundDevice.cpp */,
-				3FA000222436FDBB002DAA38 /* effervescence-water-Bridging-Header.h */,
 				3FA0002824377C23002DAA38 /* EFF_OutputDeviceManager.h */,
 				3FA0002D2437DF08002DAA38 /* EFF_OutputDeviceManager.mm */,
 				3F7B93492437F61500074A09 /* EFF_HALAudioSystemObject.h */,
 				3F7B934A2437F61500074A09 /* EFF_HALAudioSystemObject.mm */,
+				3FA000222436FDBB002DAA38 /* effervescence-water-Bridging-Header.h */,
 			);
 			path = WaterSource;
 			sourceTree = "<group>";
