@@ -16,6 +16,9 @@
 //  This class isn't always able to figure out what macOS would do, in which case it leaves EFFApp's
 //  output device as it is.
 //
+// nerrons:  currently not used. Will start using this after playthrough is done
+// In EFF context, playthrough simply means to play warped soundwaves; no realtime requirments.
+// Then we will need to manage changing output device.
 
 #ifndef EFF_OutputDeviceManager_h
 #define EFF_OutputDeviceManager_h

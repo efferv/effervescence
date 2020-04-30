@@ -1,5 +1,5 @@
 //
-//  NSObject+EFF_AudioDeviceManager.h
+//  EFF_AudioDeviceManager.h
 //  effervescence-app
 //
 //  Created by Nerrons on 30/3/20.

@@ -11,7 +11,6 @@
 		3FA000002433AF9D002DAA38 /* libPublicUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C47724313A6700189EFB /* libPublicUtility.a */; };
 		3FA000202433B225002DAA38 /* libSharedSource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0001F2433B225002DAA38 /* libSharedSource.a */; };
 		3FA0002E2437DF09002DAA38 /* EFF_OutputDeviceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0002D2437DF08002DAA38 /* EFF_OutputDeviceManager.mm */; };
-		3FA000302437EC3A002DAA38 /* EFF_OutputDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0002F2437EC3A002DAA38 /* EFF_OutputDeviceManager.swift */; };
 		3FB5C3E82430B63C00189EFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5C3E72430B63C00189EFB /* ContentView.swift */; };
 		3FB5C3EA2430B63D00189EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C3E92430B63D00189EFB /* Assets.xcassets */; };
 		3FB5C3F02430B63D00189EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5C3EE2430B63D00189EFB /* Main.storyboard */; };
@@ -34,7 +33,6 @@
 		3FA000222436FDBB002DAA38 /* effervescence-water-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "effervescence-water-Bridging-Header.h"; sourceTree = "<group>"; };
 		3FA0002824377C23002DAA38 /* EFF_OutputDeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFF_OutputDeviceManager.h; sourceTree = "<group>"; };
 		3FA0002D2437DF08002DAA38 /* EFF_OutputDeviceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EFF_OutputDeviceManager.mm; sourceTree = "<group>"; };
-		3FA0002F2437EC3A002DAA38 /* EFF_OutputDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFF_OutputDeviceManager.swift; sourceTree = "<group>"; };
 		3FB5C3E22430B63C00189EFB /* effervescence-water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "effervescence-water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB5C3E72430B63C00189EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../WaterSupport/ContentView.swift; sourceTree = "<group>"; };
 		3FB5C3E92430B63D00189EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -236,7 +234,6 @@
 			children = (
 				3FB5C3E72430B63C00189EFB /* ContentView.swift */,
 				3FB5C57C243142F900189EFB /* AppDelegate.swift */,
-				3FA0002F2437EC3A002DAA38 /* EFF_OutputDeviceManager.swift */,
 				3FB5C57E2431CB5E00189EFB /* EFF_AudioDeviceManager.h */,
 				3FB5C57F2431CB5F00189EFB /* EFF_AudioDeviceManager.mm */,
 				3FB5C5812431CBF100189EFB /* EFF_AudioDevice.cpp */,
@@ -323,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA000302437EC3A002DAA38 /* EFF_OutputDeviceManager.swift in Sources */,
 				3FB5C3E82430B63C00189EFB /* ContentView.swift in Sources */,
 				3FB5C57D243142F900189EFB /* AppDelegate.swift in Sources */,
 				3FB5C59E2431F0F300189EFB /* EFF_SoundDevice.cpp in Sources */,

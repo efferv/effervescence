@@ -5,6 +5,8 @@
 //  Created by Nerrons on 29/3/20.
 //  Copyright © 2020 nerrons. All rights reserved.
 //
+//  effervescence-water handles sound processing as well as UI.
+//  effervescence-carbon's only job is to collect waves through the device.
 
 import Cocoa
 import SwiftUI
@@ -17,9 +19,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var audioDeviceManager: EFFAudioDeviceManager!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // I want to make a Swift class called Diaphragm which will provide
+        // a universal Swift API to all SwiftUI classes
         audioDeviceManager = EFFAudioDeviceManager()
-        let audioSystem = EFF_HALAudioSystemObject()
-        let oldOutputDevice = audioSystem.getOSDefaultMainDevice()
+        let hal = EFF_HALAudioSystemObject()
+        let oldOutputDevice = hal.getOSDefaultMainDevice()
         audioDeviceManager.setEFFSoundDeviceAsOSDefault()
         audioDeviceManager.setOutputDeviceWithID(oldOutputDevice, revertOnFailure: false)
 

@@ -80,8 +80,6 @@ NSString* const kAudioSystemSettingsPlist =
 // in the blanks, if necessary.
 - (NSArray<NSString*>*) readPreferredDevices {
     // Read the Plist file into a dictionary.
-    // TODO: If this file doesn't exist, try paths used by older versions of macOS. (If there are
-    //       any, that is. I haven't checked.)
     NSURL* url = [NSURL fileURLWithPath:kAudioSystemSettingsPlist];
     NSError* error = nil;
     NSData* data = [NSData dataWithContentsOfURL:url options:0 error:&error];
