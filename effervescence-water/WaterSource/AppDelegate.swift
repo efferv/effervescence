@@ -16,16 +16,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
 
-    var audioDeviceManager: EFFAudioDeviceManager!
+    var diaphragm = Diaphragm()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // I want to make a Swift class called Diaphragm which will provide
-        // a universal Swift API to all SwiftUI classes
-        audioDeviceManager = EFFAudioDeviceManager()
-        let hal = EFF_HALAudioSystemObject()
-        let oldOutputDevice = hal.getOSDefaultMainDevice()
-        audioDeviceManager.setEFFSoundDeviceAsOSDefault()
-        audioDeviceManager.setOutputDeviceWithID(oldOutputDevice, revertOnFailure: false)
+        // Initialize audio related stuff
+        diaphragm.setEFFAsOutputDevice()
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
@@ -42,7 +37,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        audioDeviceManager.unsetEFFSoundDeviceAsOSDefault()
+        // Undo all audio-related operations
+        diaphragm.unsetEFFAsOutputDevice()
     }
 }
 

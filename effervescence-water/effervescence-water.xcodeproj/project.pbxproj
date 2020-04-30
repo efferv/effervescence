@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4451D1245ABBAE00DDF32A /* Diaphragm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4451D0245ABBAE00DDF32A /* Diaphragm.swift */; };
 		3F7B934B2437F61500074A09 /* EFF_HALAudioSystemObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B934A2437F61500074A09 /* EFF_HALAudioSystemObject.mm */; };
 		3FA000002433AF9D002DAA38 /* libPublicUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C47724313A6700189EFB /* libPublicUtility.a */; };
 		3FA000202433B225002DAA38 /* libSharedSource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0001F2433B225002DAA38 /* libSharedSource.a */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F4451D0245ABBAE00DDF32A /* Diaphragm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diaphragm.swift; sourceTree = "<group>"; };
 		3F7B93492437F61500074A09 /* EFF_HALAudioSystemObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFF_HALAudioSystemObject.h; sourceTree = "<group>"; };
 		3F7B934A2437F61500074A09 /* EFF_HALAudioSystemObject.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EFF_HALAudioSystemObject.mm; sourceTree = "<group>"; };
 		3FA0001F2433B225002DAA38 /* libSharedSource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSharedSource.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,8 +234,9 @@
 		3FB5C57B243142F900189EFB /* WaterSource */ = {
 			isa = PBXGroup;
 			children = (
-				3FB5C3E72430B63C00189EFB /* ContentView.swift */,
 				3FB5C57C243142F900189EFB /* AppDelegate.swift */,
+				3FB5C3E72430B63C00189EFB /* ContentView.swift */,
+				3F4451D0245ABBAE00DDF32A /* Diaphragm.swift */,
 				3FB5C57E2431CB5E00189EFB /* EFF_AudioDeviceManager.h */,
 				3FB5C57F2431CB5F00189EFB /* EFF_AudioDeviceManager.mm */,
 				3FB5C5812431CBF100189EFB /* EFF_AudioDevice.cpp */,
@@ -327,6 +330,7 @@
 				3FB5C5832431CBF100189EFB /* EFF_AudioDevice.cpp in Sources */,
 				3FA0002E2437DF09002DAA38 /* EFF_OutputDeviceManager.mm in Sources */,
 				3FB5C5802431CB5F00189EFB /* EFF_AudioDeviceManager.mm in Sources */,
+				3F4451D1245ABBAE00DDF32A /* Diaphragm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
