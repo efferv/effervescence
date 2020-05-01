@@ -39,7 +39,8 @@
          location = "group:CAHALAudioObject.cpp">
       </FileRef>
       <FileRef
-         location = "group:CAHALAudioObject.h">
+         location = "group:CAHALAudioObject.h"
+         assignedFileDataType = "public.c-plus-plus-header">
       </FileRef>
       <FileRef
          location = "group:CAHALAudioStream.cpp">
@@ -114,7 +115,8 @@
          location = "group:CADispatchQueue.h">
       </FileRef>
       <FileRef
-         location = "group:CAException.h">
+         location = "group:CAException.h"
+         assignedFileDataType = "public.c-plus-plus-header">
       </FileRef>
       <FileRef
          location = "group:CAHostTimeBase.cpp">

@@ -90,6 +90,31 @@
     }
 }
 
+#pragma mark Individual Device Operations
+
+- (NSString*) getNameFromDeviceID:(AudioObjectID)deviceID {
+    CAHALAudioDevice device(deviceID);
+    return CFBridgingRelease(device.CopyName());
+}
+
+- (BOOL) canBeOutputDevice:(AudioObjectID)deviceID {
+    EFFAudioDevice device(deviceID);
+    return device.CanBeOutputDeviceInEFFApp();
+}
+
+- (AudioObjectID) getEFFMainDeviceID {
+    if (effSoundDevicePtr) {
+        return effSoundDevicePtr->GetEFFMainDeviceID();
+    }
+    return 0;
+}
+
+- (AudioObjectID) getEFFSystemDeviceID {
+    if (effSoundDevicePtr) {
+        return effSoundDevicePtr->GetEFFSystemDeviceInstance().GetObjectID();
+    }
+    return 0;
+}
 
 #pragma mark Systemwide Default Device
 

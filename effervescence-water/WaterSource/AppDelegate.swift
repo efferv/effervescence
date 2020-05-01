@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         diaphragm.setEFFAsOutputDevice()
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = ContentView().environmentObject(diaphragm)
 
         // Create the window and set the content view. 
         window = NSWindow(

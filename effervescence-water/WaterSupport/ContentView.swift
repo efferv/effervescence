@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var diaphragm: Diaphragm
+
     var body: some View {
-        Text("Hello, World!")
+        List(diaphragm.getOutputDeviceNames(), id: \.self) { name in
+            Text(name)
+        }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

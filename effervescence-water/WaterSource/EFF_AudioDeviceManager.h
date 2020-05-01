@@ -42,6 +42,13 @@ static const int kEFFErrorCode_ReturningEarly       = 2;
 // Set the EFFOutputDeviceMenuSection to be notified when the output device is changed.
 // - (void) setOutputDeviceMenuSection:(EFFOutputDeviceMenuSection*)menuSection;
 
+// Accessing info for individual audio devices
+- (NSString*) getNameFromDeviceID:(AudioObjectID)deviceID;
+- (BOOL) canBeOutputDevice:(AudioObjectID)deviceID;
+- (AudioObjectID) getEFFMainDeviceID;
+- (AudioObjectID) getEFFSystemDeviceID;
+
+
 // Set EFFDevice as the default audio device for all processes
 - (NSError* __nullable) setEFFSoundDeviceAsOSDefault;
 // Replace EFFDevice as the default device with the output device

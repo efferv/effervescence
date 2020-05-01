@@ -16,13 +16,14 @@
 @interface EFF_HALAudioSystemObject : NSObject
 
 // Accessors
-- (void) getAudioDevicesWithNumber:(UInt32)ioNumberAudioDevices
+- (NSInteger) getNumberAudioDevices;
+- (void) getAudioDevicesWithNumber:(NSInteger)inNumberAudioDevices
                    outAudioDevices:(AudioObjectID*)outAudioDevices;
 - (AudioObjectID) getFirstAudioDevice;
 
 // Default devices
-- (AudioObjectID) getOSDefaultMainDevice;
-- (AudioObjectID) getOSDefaultSystemDevice;
+- (AudioObjectID) getOSDefaultMainDeviceID;
+- (AudioObjectID) getOSDefaultSystemDeviceID;
 - (void) setOSDefaultMainDeviceWithID:(AudioObjectID)mainDeviceID;
 - (void) setOSDefaultSystemDeviceWithID:(AudioObjectID)systemDeviceID;
 

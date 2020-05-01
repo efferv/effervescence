@@ -17,8 +17,13 @@
     CAHALAudioSystemObject audioSystemObject;
 }
 
-- (void) getAudioDevicesWithNumber:(UInt32)ioNumberAudioDevices
+- (NSInteger) getNumberAudioDevices {
+    return audioSystemObject.GetNumberAudioDevices();
+}
+
+- (void) getAudioDevicesWithNumber:(NSInteger)inNumberAudioDevices
                    outAudioDevices:(AudioObjectID*)outAudioDevices {
+    UInt32 ioNumberAudioDevices = (UInt32)inNumberAudioDevices;
     audioSystemObject.GetAudioDevices(ioNumberAudioDevices, outAudioDevices);
 }
 
@@ -26,11 +31,11 @@
     return audioSystemObject.GetAudioDeviceAtIndex(0);
 }
 
-- (AudioObjectID) getOSDefaultMainDevice {
+- (AudioObjectID) getOSDefaultMainDeviceID {
     return audioSystemObject.GetDefaultAudioDevice(false, false);
 }
 
-- (AudioObjectID) getOSDefaultSystemDevice {
+- (AudioObjectID) getOSDefaultSystemDeviceID {
     return audioSystemObject.GetDefaultAudioDevice(false, true);
 }
 
