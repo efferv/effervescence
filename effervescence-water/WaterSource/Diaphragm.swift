@@ -22,6 +22,23 @@
 //
 // The rule of thumb is that the views shouldn't directly call C-Layer stuff.
 // This means the diaphragm is susceptible to get big quickly
+//
+// Notes on audio processing:
+// I soon need to decide on a way to process audio. I see two options:
+//
+// 1) Record whatever's captured by the driver.
+// + (Probably) less demanding to code with more margins for error
+// + More creative effects to allow a flattened, evenly-distributed experience
+// - (Very) Bad I/O performance
+//
+// 2) Process real-time with AU
+// + Smooth performance, since most heavy operations are handled by OS
+// - Requires more rigorous coding == buggy
+// - Need to find ways to store past audio fragments if want to flatten
+//
+// So I'm going to take the AU route. Flattening can be a later problem to
+// solve. Pretty sure it can incorporate audio files quite smoothly
+
 
 import Foundation
 
