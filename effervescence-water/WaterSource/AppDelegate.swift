@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Initialize audio related stuff
-        diaphragm.setEFFAsOutputDevice()
+        diaphragm.setEFFAsDefaultDevice()
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView().environmentObject(diaphragm)
@@ -38,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Undo all audio-related operations
-        diaphragm.unsetEFFAsOutputDevice()
+        diaphragm.unsetEFFAsDefaultDevice()
     }
 }
 

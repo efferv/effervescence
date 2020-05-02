@@ -19,24 +19,30 @@
 // * C-Layer    --/
 //
 // * Driver     ---- Carbon
+//
+// The rule of thumb is that the views shouldn't directly call C-Layer stuff.
+// This means the diaphragm is susceptible to get big quickly
 
 import Foundation
 
 class Diaphragm: ObservableObject {
-    
-    @Published var updates = 0
 
     var audioDeviceManager: EFFAudioDeviceManager
     var hal: EFF_HALAudioSystemObject
     
+    @Published var outputDeviceIDs: [AudioObjectID]
+    @Published var outputDeviceNames: [String]
+    
     init() {
         audioDeviceManager = EFFAudioDeviceManager()
         hal = EFF_HALAudioSystemObject()
+        outputDeviceIDs = []
+        outputDeviceNames = []
+        
+        refreshOutputDevices()
     }
 
-    func setEFFAsOutputDevice() {
-        print(getOutputDeviceNames())
-
+    func setEFFAsDefaultDevice() {
         let oldOutputDeviceID = hal.getOSDefaultMainDeviceID()
         let effDeviceID = audioDeviceManager.getEFFMainDeviceID();
         
@@ -48,22 +54,21 @@ class Diaphragm: ObservableObject {
         }
     }
 
-    func unsetEFFAsOutputDevice() {
+    func unsetEFFAsDefaultDevice() {
         audioDeviceManager.unsetEFFSoundDeviceAsOSDefault()
     }
 
-    func getOutputDeviceIDs() -> [AudioObjectID] {
+    func refreshOutputDeviceIDs() {
         // get all available audio devices
         let numAudioDevices = hal.getNumberAudioDevices()
-        let audioDeviceIDListPtr = UnsafeMutablePointer<AudioObjectID>.allocate(capacity: numAudioDevices)
-        defer { free(audioDeviceIDListPtr) }
-        hal.getAudioDevices(withNumber: numAudioDevices, outAudioDevices: audioDeviceIDListPtr)
-        let audioDeviceIDList = [AudioObjectID](UnsafeBufferPointer(start: audioDeviceIDListPtr,
-                                                                    count: numAudioDevices))
+        let audioDeviceIDsPtr = UnsafeMutablePointer<AudioObjectID>.allocate(capacity: numAudioDevices)
+        defer { free(audioDeviceIDsPtr) }
+        hal.getAudioDevices(withNumber: numAudioDevices, outAudioDevices: audioDeviceIDsPtr)
+        let audioDeviceIDs = [AudioObjectID](UnsafeBufferPointer(start: audioDeviceIDsPtr,
+                                                                 count: numAudioDevices))
 
         // filter out the output devices
-        let outputDeviceIDList = audioDeviceIDList.filter { audioDeviceManager.canBeOutputDevice($0) }
-        return outputDeviceIDList
+        outputDeviceIDs = audioDeviceIDs.filter { audioDeviceManager.canBeOutputDevice($0) }
     }
     
     func translateIDToName(fromArray: [AudioObjectID]) -> [String] {
@@ -74,7 +79,8 @@ class Diaphragm: ObservableObject {
         return names
     }
 
-    func getOutputDeviceNames() -> [String] {
-        return translateIDToName(fromArray: getOutputDeviceIDs())
+    func refreshOutputDevices() {
+        refreshOutputDeviceIDs()
+        outputDeviceNames = translateIDToName(fromArray: outputDeviceIDs)
     }
 }
