@@ -12,7 +12,7 @@ import Combine
 struct OutputSwitchView: View {
     @EnvironmentObject var diaphragm: Diaphragm
 
-    @State private var picked: Int = 0
+    @State var picked: Int
 
     var body: some View {
         Form {
@@ -22,6 +22,7 @@ struct OutputSwitchView: View {
                 }
             }.onReceive(Just(self.picked)) { (p) in
                 print(self.diaphragm.outputDeviceNames[self.picked])
+                self.diaphragm.setOutputDevice(id: self.diaphragm.outputDeviceIDs[self.picked])
             }
         }
     }
@@ -29,6 +30,6 @@ struct OutputSwitchView: View {
 
 struct OutputSwitchView_Previews: PreviewProvider {
     static var previews: some View {
-        OutputSwitchView().environmentObject(Diaphragm())
+        OutputSwitchView(picked: 0).environmentObject(Diaphragm())
     }
 }

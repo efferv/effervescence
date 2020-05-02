@@ -12,7 +12,8 @@ struct ContentView: View {
     @EnvironmentObject var diaphragm: Diaphragm
 
     var body: some View {
-        OutputSwitchView()
+        // Compute the initial value of the picked state so it matches the pre-decided EFF output device
+        OutputSwitchView(picked: diaphragm.outputDeviceIDs.firstIndex(of: diaphragm.oldOutputDeviceID) ?? 0)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

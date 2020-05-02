@@ -29,23 +29,25 @@ class Diaphragm: ObservableObject {
 
     var audioDeviceManager: EFFAudioDeviceManager
     var hal: EFF_HALAudioSystemObject
-    
+
     @Published var outputDeviceIDs: [AudioObjectID]
     @Published var outputDeviceNames: [String]
+    @Published var oldOutputDeviceID: AudioObjectID
     
     init() {
         audioDeviceManager = EFFAudioDeviceManager()
         hal = EFF_HALAudioSystemObject()
         outputDeviceIDs = []
         outputDeviceNames = []
-        
+        oldOutputDeviceID = hal.getOSDefaultMainDeviceID()
+
         refreshOutputDevices()
+        setEFFAsDefaultDevice()
     }
 
     func setEFFAsDefaultDevice() {
-        let oldOutputDeviceID = hal.getOSDefaultMainDeviceID()
-        let effDeviceID = audioDeviceManager.getEFFMainDeviceID();
-        
+        let effDeviceID = audioDeviceManager.getEFFMainDeviceID()
+
         if oldOutputDeviceID != effDeviceID {
             audioDeviceManager.setEFFSoundDeviceAsOSDefault()
             audioDeviceManager.setOutputDeviceWithID(oldOutputDeviceID, revertOnFailure: false)
@@ -82,5 +84,9 @@ class Diaphragm: ObservableObject {
     func refreshOutputDevices() {
         refreshOutputDeviceIDs()
         outputDeviceNames = translateIDToName(fromArray: outputDeviceIDs)
+    }
+    
+    func setOutputDevice(id: AudioObjectID) {
+        audioDeviceManager.setOutputDeviceWithID(id, revertOnFailure: true)
     }
 }

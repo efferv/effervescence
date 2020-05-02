@@ -19,8 +19,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var diaphragm = Diaphragm()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Initialize audio related stuff
-        diaphragm.setEFFAsDefaultDevice()
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView().environmentObject(diaphragm)
