@@ -28,16 +28,22 @@
 //
 // 1) Record whatever's captured by the driver.
 // + (Probably) less demanding to code with more margins for error
-// + More creative effects to allow a flattened, evenly-distributed experience
+// + More creative effects to allow a uniformly continuous, evenly-distributed experience
+// + Easy support for apps
 // - (Very) Bad I/O performance
 //
 // 2) Process real-time with AU
 // + Smooth performance, since most heavy operations are handled by OS
 // - Requires more rigorous coding == buggy
 // - Need to find ways to store past audio fragments if want to flatten
+// - Hard to support all devices
 //
-// So I'm going to take the AU route. Flattening can be a later problem to
+// So I'm going to take the AU route. Uniform continuity can be a later problem to
 // solve. Pretty sure it can incorporate audio files quite smoothly
+//
+// Probably I shall support built-in speaker first by AU. Then if I want to support
+// AirPods etc. I later go with the recording route.
+
 
 
 import Foundation
@@ -90,9 +96,9 @@ class Diaphragm: ObservableObject {
         outputDeviceIDs = audioDeviceIDs.filter { audioDeviceManager.canBeOutputDevice($0) }
     }
     
-    func translateIDToName(fromArray: [AudioObjectID]) -> [String] {
+    func translateIDToName(fromArray arr: [AudioObjectID]) -> [String] {
         var names = [String]()
-        for id in fromArray {
+        for id in arr {
             names.append(audioDeviceManager.getNameFromDeviceID(id))
         }
         return names

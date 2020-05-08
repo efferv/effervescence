@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F4451D1245ABBAE00DDF32A /* Diaphragm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4451D0245ABBAE00DDF32A /* Diaphragm.swift */; };
 		3F4451D5245C66C900DDF32A /* OutputSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4451D4245C66C900DDF32A /* OutputSwitchView.swift */; };
+		3F6B250F245DC74800D0300C /* NoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B250E245DC74800D0300C /* NoiseGenerator.swift */; };
 		3F7B934B2437F61500074A09 /* EFF_HALAudioSystemObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B934A2437F61500074A09 /* EFF_HALAudioSystemObject.mm */; };
 		3FA000002433AF9D002DAA38 /* libPublicUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB5C47724313A6700189EFB /* libPublicUtility.a */; };
 		3FA000202433B225002DAA38 /* libSharedSource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0001F2433B225002DAA38 /* libSharedSource.a */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		3F4451D0245ABBAE00DDF32A /* Diaphragm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diaphragm.swift; sourceTree = "<group>"; };
 		3F4451D4245C66C900DDF32A /* OutputSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputSwitchView.swift; sourceTree = "<group>"; };
+		3F6B250E245DC74800D0300C /* NoiseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGenerator.swift; sourceTree = "<group>"; };
 		3F7B93492437F61500074A09 /* EFF_HALAudioSystemObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFF_HALAudioSystemObject.h; sourceTree = "<group>"; };
 		3F7B934A2437F61500074A09 /* EFF_HALAudioSystemObject.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EFF_HALAudioSystemObject.mm; sourceTree = "<group>"; };
 		3FA0001F2433B225002DAA38 /* libSharedSource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSharedSource.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +253,7 @@
 				3F7B93492437F61500074A09 /* EFF_HALAudioSystemObject.h */,
 				3F7B934A2437F61500074A09 /* EFF_HALAudioSystemObject.mm */,
 				3FA000222436FDBB002DAA38 /* effervescence-water-Bridging-Header.h */,
+				3F6B250E245DC74800D0300C /* NoiseGenerator.swift */,
 			);
 			path = WaterSource;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6B250F245DC74800D0300C /* NoiseGenerator.swift in Sources */,
 				3FB5C3E82430B63C00189EFB /* ContentView.swift in Sources */,
 				3FB5C57D243142F900189EFB /* AppDelegate.swift in Sources */,
 				3FB5C59E2431F0F300189EFB /* EFF_SoundDevice.cpp in Sources */,
